@@ -8,12 +8,11 @@ float v;
 puerta(puerta);
 
 void *operador1(void *arg) {
-    float x = 1250;
     float y = 350;
     float z = 25;
     cerrar_puerta(puerta);
 	v=(z/y);
-    printf("%f\n",v);
+    printf("z/y= %f\n",v);
     abrir_puerta(puerta);
     return NULL;
 }
@@ -21,11 +20,9 @@ void *operador1(void *arg) {
 void *operador2(void *arg) {
     sleep(2);
     float x = 1250;
-    float y = 350;
-    float z = 25;
     cerrar_puerta(puerta);
 	v=v*x;
-    printf("%f\n",v);
+    printf("(z/y)*x= %f\n",v);
     abrir_puerta(puerta);
     return NULL;
 }
